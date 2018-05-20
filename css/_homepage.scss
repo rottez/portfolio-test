@@ -1,0 +1,195 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+// reset-end
+$background: #dbdbd9;
+$main-color: orange;
+$secondary-color: #eee;
+$third-color: #333;
+$main-font: 'Work Sans', sans-serif;
+#alert {
+	display: none;
+}
+body {
+	background: $background;
+	font-family: $main-font;
+	color: $secondary-color;
+	
+}
+.bg-img {
+	background:
+	linear-gradient(
+	 rgba(0, 0, 0, 0.7), 
+	 rgba(0, 0, 0, 0.9)
+	),
+	url(../img/second.jpeg) no-repeat 0;
+	height: 720px;
+	width: 100%;
+	.header-wrapper {
+		padding: 0 0.5em;
+	}
+	h1 {
+		padding-top: 3em;
+		font-size: 3rem;
+	}
+	p {
+		padding-top: 3em;
+		font-size: 1rem;
+	}
+	ul {
+		text-transform: uppercase;
+		#mod {
+			background:
+			linear-gradient(
+			rgba(116, 110, 110, 0.383), 
+			rgba(131, 124, 124, 0.383)
+			),;
+			color: $secondary-color;
+		}
+		margin-top: 3em;
+		a {
+			text-align: center;
+			display: block;
+			text-decoration: none;
+			background: $main-color;
+			color: $secondary-color;
+			font-size: 1.2rem;
+			margin: 1em 0;
+			padding: .5em 0;
+			
+		}
+	}
+}
+// header-end
+.content {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	#section-a {
+		margin-top: 5em;
+	}
+	img {
+		width: 90%;
+		height: auto;
+		border-radius: 5px;
+		-webkit-box-shadow: 0px 14px 33px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 14px 33px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 14px 33px 0px rgba(0,0,0,0.75);
+	}
+	#section-b {
+		margin-top: 1em;
+		color: $third-color;
+		h2 {
+			font-size: 1.3rem
+		}
+		p {
+			margin-top: 1em;
+			font-size: 1rem;
+		}
+		button {
+			background: $main-color;
+			border: none;
+			border-radius: 2px;
+			color: $third-color;
+			font-size: .7rem;
+		}
+	}
+}
+// content-end
+.bg-color {
+	margin-top: 5em;
+	background: $main-color;
+	.skills-wrapper > div {
+		padding: .5em;
+	}
+	.skills-wrapper {
+		padding: 2em 0;
+		text-align: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	i {
+		font-size: 4rem;
+	}
+}
+// skills-end
+.profile {
+	display: grid;
+	grid-template-columns: 1fr;
+	text-align: center;
+	img {
+		width: 50%;
+		height: auto;
+		border-radius: 400px;
+		}
+	p {
+		color: $third-color;
+		font-size: 1rem;
+		margin-top: 1em;
+	}
+	h2 {
+		font-size: 1.2rem;
+		text-transform: uppercase;
+	}
+	// second div
+	h1 {
+		font-size: 1.4rem;
+		padding: .3em;
+		a {
+			color: $third-color;
+			text-decoration: none;
+		}
+		a:hover {
+			color: $secondary-color;
+		}
+	}
+	h3 {
+		color: $third-color;
+		font-size: 1rem;
+		padding: .5em 1em;
+		padding-bottom: 2em; 
+	}
+}
+footer {
+	background: #333;
+	height: 160px;
+	color: lightgrey;
+	text-align: center;
+	.footer-container {
+		padding-top: 2em;
+		a {
+			font-size: 2.8rem;
+			padding: .3em;
+			color: lightgrey;
+		}
+		a:hover {
+			color: $main-color;
+		}
+	}
+	.copyright {
+		font-size: .9rem;
+		margin-top: 2em;
+	}
+}
+@media only screen and (min-width: 500px) {
+	#alert {
+		display: block;
+	}
+}
