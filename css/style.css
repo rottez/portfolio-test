@@ -49,7 +49,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  height: 3em;
+  height: 3.4em;
 }
 
 @media screen and (min-width: 630px) {
