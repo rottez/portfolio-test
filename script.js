@@ -30,6 +30,7 @@ $("#bottom").click(function() {
     scrollTop: $(".profile").offset().top},
     'slow');
 });
+//xl
 $("#xl-nav-home").click(function() {
     $('html,body').animate({
     scrollTop: $(".bg-img").offset().top},
@@ -44,4 +45,29 @@ $("#xl-nav-contact").click(function() {
     $('html,body').animate({
     scrollTop: $(".profile").offset().top},
     'slow');
-});		
+});
+//sm
+$("#sm-nav-home").click(function() {
+    $('html,body').animate({
+    scrollTop: $(".bg-img").offset().top},
+    'slow');
+    $('.modal').fadeOut();
+    $('#close-nav').hide();
+    $('#toggle-nav').fadeIn();
+});
+$("#sm-nav-work").click(function() {
+    $('html,body').animate({
+    scrollTop: $(".content").offset().top},
+    'slow');
+    $('.modal').fadeOut();
+    $('#close-nav').hide();
+    $('#toggle-nav').fadeIn();
+});
+$("#sm-nav-contact").click(function() {
+    $('html,body').animate({
+    scrollTop: $(".profile").offset().top},
+    'slow');
+    $('.modal').fadeOut();
+    $('#close-nav').hide();
+    $('#toggle-nav').fadeIn();
+});				
