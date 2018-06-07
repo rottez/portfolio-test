@@ -48,41 +48,7 @@ body {
 		@media screen and (min-width: $break-large){
 			height: 600px;
 		}
-	// nav {
-	// 	background: #404142;
-	// 	overflow: hidden;
-	// 	position: fixed;
-	// 	width: 100%;
-	// 	top: 0;
-	// 	height: 3.4em;
-	// 	@media screen and (min-width: $break-large) {
-	// 		display: none;
-	// 	}
-	// 	// border-bottom: 0.2px solid $secondary-color;
-	// 	.dropdown{
-	// 		display: none;
-	// 		text-align: left;
-	// 		i {
-	// 			font-size: 2rem;
-	// 		}
-	// 		a {
-	// 		  font-size: .8rem;
-	// 		  color: $secondary-color;
-	// 		  text-decoration: none;
-	// 		  text-transform: uppercase;
-	// 		  padding: .2em 1em;
-	// 		  @media screen and (min-width: 350px){
-	// 			  font-size: 1rem;
-	// 		  }
-	// 		}
-	// 	}
-	// 	i {
-	// 		font-size: 2rem;
-	// 		color: $secondary-color;
-	// 		text-align: left;
-	// 		padding: .3em 0 .3em .3em;
-	// 	}
-	// }
+	
 	.navbar-sm{
 		position: fixed;
 		width: 100%;
@@ -224,7 +190,7 @@ body {
 			color: $secondary-color;
 		}
 		#bottom{
-			color: black;
+			color: #333;
 		}
 		a {
 			cursor: pointer;
@@ -297,7 +263,7 @@ body {
 		}
 	}
 	#section-b {
-		margin-top: 1em;
+		margin-top: 2.5em;
 		color: $third-color;
 		@media screen and (min-width: $break-large){
 			margin-top: 70px;
@@ -453,13 +419,13 @@ body {
 }
 footer {
 	background: #333;
-	height: 160px;
+	height: 140px;
 	color: lightgrey;
 	text-align: center;
 	.footer-container {
 		padding-top: 2em;
 		@media screen and (min-width: $break-large){
-			padding-top: 3em;
+			padding-top: 2em;
 		}
 		a {
 			font-size: 2.8rem;

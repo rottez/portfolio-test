@@ -243,7 +243,7 @@ body {
 }
 
 .bg-img ul #bottom {
-  color: black;
+  color: #333;
 }
 
 .bg-img ul a {
@@ -341,7 +341,7 @@ body {
 }
 
 .content #section-b {
-  margin-top: 1em;
+  margin-top: 2.5em;
   color: #333;
 }
 
@@ -569,7 +569,7 @@ body {
 
 footer {
   background: #333;
-  height: 160px;
+  height: 140px;
   color: lightgrey;
   text-align: center;
 }
@@ -580,7 +580,7 @@ footer .footer-container {
 
 @media screen and (min-width: 1025px) {
   footer .footer-container {
-    padding-top: 3em;
+    padding-top: 2em;
   }
 }
 
