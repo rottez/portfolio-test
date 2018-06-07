@@ -17,10 +17,10 @@ if(this.scrollY > 500) a.style = 'background: #333; position: fixed; z-index: 1;
 if(this.scrollY > 500) b.style = 'display: block;'
     else b.style='';
 if(this.scrollY > 400) x.style="";
-    else x.style="border-bottom: 2px solid orange;"
-if(this.scrollY > 400 && this.scrollY < 1400) y.style="border-bottom: 2px solid orange;";
+    else x.style="color: orange;"
+if(this.scrollY > 400 && this.scrollY < 1400) y.style="color: orange;animation-name: transition; animation-duration: 0.3s;";
     else y.style='';
-if(this.scrollY > 1401) z.style="border-bottom: 2px solid orange;";
+if(this.scrollY > 1401) z.style="color: orange;animation-name: transition; animation-duration: 0.3s;";
     else z.style='';
 };
 $("#bottom").click(function() {
@@ -40,6 +40,6 @@ $("#xl-nav-work").click(function() {
 });
 $("#xl-nav-contact").click(function() {
     $('html,body').animate({
-    scrollTop: $(".skills-wrapper").offset().top},
+    scrollTop: $(".profile").offset().top},
     'slow');
 });		
