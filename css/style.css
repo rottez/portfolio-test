@@ -43,49 +43,48 @@ body {
   }
 }
 
-.bg-img nav {
-  background: #404142;
-  overflow: hidden;
+.bg-img .navbar-sm {
   position: fixed;
   width: 100%;
-  top: 0;
-  height: 3.4em;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.bg-img .navbar-sm i {
+  padding: .2em 0 .3em .5em;
+  color: orange;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 1025px) {
-  .bg-img nav {
+  .bg-img .navbar-sm {
     display: none;
   }
 }
 
-.bg-img nav .dropdown {
-  display: none;
+.bg-img .modal {
   text-align: left;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 6.5%;
+  width: 30%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-.bg-img nav .dropdown i {
-  font-size: 2rem;
-}
-
-.bg-img nav .dropdown a {
-  font-size: .8rem;
-  color: #eee;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: .2em 1em;
-}
-
-@media screen and (min-width: 350px) {
-  .bg-img nav .dropdown a {
-    font-size: 1rem;
+@media screen and (min-width: 1025px) {
+  .bg-img .modal {
+    display: none;
   }
 }
 
-.bg-img nav i {
-  font-size: 2rem;
-  color: #eee;
-  text-align: left;
-  padding: .3em 0 .3em .3em;
+.bg-img .modal li {
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 1em 1em;
+  padding-top: 2em;
+  color: orange;
 }
 
 .bg-img .navbar {
@@ -204,7 +203,7 @@ body {
 
 @media screen and (min-width: 372px) {
   .bg-img p {
-    width: 60%;
+    width: 80%;
   }
 }
 

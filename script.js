@@ -1,10 +1,12 @@
 $("#toggle-nav").click(function() {
     $("#toggle-nav").hide();
-    $("#nav").fadeToggle();
+    $("#close-nav").show();
+    $(".modal").fadeIn();
 });
 $("#close-nav").click(function() {
-    $("#nav").hide();
-    $("#toggle-nav").fadeToggle();
+    $(".modal").fadeOut();
+    $("#close-nav").hide();
+    $("#toggle-nav").show();
 });
 window.onscroll = () => {
 const a = document.querySelector('.navbar');
