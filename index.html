@@ -9,8 +9,7 @@
    <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-		
+<body>	
 	<div class="bg-img">
 	  <nav>
 		<div id="nav" class="dropdown">
@@ -18,14 +17,27 @@
 			<a href="#">Home</a>
 			<a href="#">Projects</a>
 			<a href="#">Contact</a>
-			
 		</div>
 		  <i id="toggle-nav" class="fa fa-bars"></i>	  
 	  </nav>
+	  <div class="navbar">
+		  <div class="header-wrapper">
+				<div class="nav-left">
+					<h3>ROBERT TOT</h3>
+					<p>FRONT-END DEVELOPER</p>
+				</div>
+				<div class="nav-right">
+					<li style="border-bottom: 2px solid orange;"id="xl-nav-home">home</li>
+					<li id="xl-nav-work">work</li>
+					<li id="xl-nav-contact">contact</li>
+				</div>
+		  </div>
+		 
+	  </div>
 		<div class="header-wrapper">
 			<h2>ROBERT TOT</h2>
-			<h1>Front-end Web Developer.</h1>
-			<p>Self taught Web Developer from Temerin, Serbia.
+			<h1>Front-end Developer.</h1>
+			<p>Self taught Front-end Developer from Temerin, Serbia.
 					If you are a business seeking a website or 
 					an employer looking to hire, you can get in touch with me below
 			</p>
@@ -38,17 +50,19 @@
 	<!-- header-end -->
 	<div class="content">
 		<div id="section-a">
-			<a href="https://rottez.github.io/rework.pastor" target="_blank"><img src="img/pastor.jpg" alt=""></a>
+			<a href="https://rottez.github.io/project-pastor" target="_blank"><img src="img/pastor1.jpg" alt=""></a>
 		</div>
 		<div id="section-b">
 			<h2>Servis Automatskih Menjaca Pastor</h2>				
-			<p>One Page Landing Page for a local business in development.
+			<p>One Page Landing Page for a local workshop.
 				Waiting for the customer for finishing touches.
 			</p>
 			<br>
 			<button>HTML5</button>
 			<button>CSS3</button>
+			<button>Sass</button>
 			<button>Javascript</button>
+			<button>Jquery</button>
 			<button>Responsive Design</button>
 		</div>
 	</div>
@@ -70,7 +84,7 @@
 		</div>
 	</div>
 	<!-- monster-end -->
-	<div class="content">
+	<!-- <div class="content">
 		<div id="section-a">
 				<a href="http://rottez.github.io/pizzeria" target="_blank"><img src="img/pizzeria.jpg" alt=""></a>
 		</div>
@@ -86,7 +100,7 @@
 			<button>Jquery</button>
 			<button>Responsive Design</button>
 		</div>
-	</div>	
+	</div>	 -->
 	<!-- pizzeria-end -->
 	<!-- content-end -->
 	<div class="bg-color">
@@ -120,7 +134,7 @@
 		<div class="profile">
 			<div>
 				<img src="img/rob.jpg">
-				<p>Robert Tot, Temerin, Serbia<br>060-148-70-13<p>
+				<p>Robert Tot, Temerin, Serbia<br>+381/60-148-70-13<p>
 			</div>
 			<div>
 				<h2>say hello</h2>
@@ -151,51 +165,6 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous">
 	</script>	
-	<script>
-		$("#toggle-nav").click(function() {
-			$("#toggle-nav").hide();
-			$("#nav").fadeToggle();
-		});
-		$("#close-nav").click(function() {
-			$("#nav").hide();
-			$("#toggle-nav").fadeToggle();
-		});
-		
-		
-
-
-
-
-
-
-
-
-
-		// window.onscroll = () => {
-		// const x = document.querySelector('#nav');
-		// if(this.scrollY <= 750) x.className = 'navbar'; else x.className = 'scroll';
-		// 	};
-
-		$("#bottom").click(function() {
-    		$('html,body').animate({
-			scrollTop: $(".profile").offset().top},
-			'slow');
-		});
-		// $("#home").click(function() {
-    	// 	$('html,body').animate({
-		// 	scrollTop: $(".header-content").offset().top},
-		// 	'slow');
-		// });	
-		// $("#project").click(function() {
-    	// 	$('html,body').animate({
-		// 	scrollTop: $(".grid-container-3").offset().top},
-		// 	'slow');
-		// });
-		// $("#contact").click(function() {
-    	// 	$('html,body').animate({
-		// 	scrollTop: $(".grid-container-profile").offset().top},
-		// 	'slow');
-		// });		
-	</script>
+	<script src="script.js"></script>
 </body>
 </html>
