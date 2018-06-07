@@ -46,7 +46,7 @@ body {
 .bg-img .navbar-sm {
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: black;
 }
 
 .bg-img .navbar-sm i {
