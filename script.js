@@ -14,10 +14,14 @@ const b = document.querySelector('.nav-left');
 const x = document.querySelector('#xl-nav-home');
 const y = document.querySelector('#xl-nav-work');
 const z = document.querySelector('#xl-nav-contact');
-if(this.scrollY > 500) a.style = 'background: #333; position: fixed; z-index: 1; animation-name: transition; animation-duration: 0.3s;' ;
-    else a.style='';
-if(this.scrollY > 500) b.style = 'display: block;'
-    else b.style='';
+if(this.scrollY > 500) {
+    a.style = 'background: #333; position: fixed; z-index: 1; animation-name: transition; animation-duration: 0.3s;' ;
+    b.style = 'display: block;';
+    }
+    else {
+        a.style='';
+        b.style='';
+    }     
 if(this.scrollY > 400) x.style="";
     else x.style="color: orange;"
 if(this.scrollY > 400 && this.scrollY < 1400) y.style="color: orange;animation-name: transition; animation-duration: 0.3s;";
