@@ -18,9 +18,9 @@ if(this.scrollY > 500) {
     a.style = 'background: #333; position: fixed; z-index: 1; animation-name: transition; animation-duration: 0.3s;' ;
     b.style = 'display: block;';
     }
-    else {
-        a.style='';
-        b.style='';
+else {
+      a.style='';
+      b.style='';
     }     
 if(this.scrollY > 400) x.style="";
     else x.style="color: orange;"
